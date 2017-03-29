@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <title>al2 Project</title>
+     <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet"> 
       <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
   <link rel="stylesheet" href="/resources/demos/style.css">
     <!-- Bootstrap -->
@@ -20,12 +21,27 @@
     <![endif]-->
   </head>
   <body>
+<!-- The overlay -->
+<div id="myNav" class="overlay">
+
+  <!-- Button to close the overlay navigation -->
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+
+  <!-- Overlay content -->
+  <div class="overlay-content">
+    <img src="images/logo_Final.PNG" width="400px" />
+    <a href="#" onclick="closeNav()">mos-i-ko system <strong>Design Studio</strong></a>
+    Create your personal architectural landscape
+  </div>
+
+</div>
+
   <div class="container-fluid">
      <div class="row">
         <div class="col-md-8" id="draw-area">
 	        <div class="row">
 	        	<header>
-			      <img src="images/logo_trans.png" />
+			      <img src="images/logo.png" width="100" />
 			    </header>
 	        </div>
 	        <div class="area">
@@ -126,12 +142,6 @@
 		          	</div>
 		          	<div class="col-md-3">
 		          		<div id="ms026" class="addMS"><img src="images/ms015.png" /></div>
-		          	</div>
-		          	<div class="col-md-3">
-		          		<div id="ms028" class="addMS"><img src="images/ms015.png" /></div>
-		          	</div>
-		          	<div class="col-md-3">
-		          		<div id="ms037" class="addMS"><img src="images/ms015.png" /></div>
 		          	</div>
 		          	<div class="col-md-3">
 		          		<div id="ms039" class="addMS"><img src="images/ms015.png" /></div>
