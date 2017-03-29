@@ -36,3 +36,17 @@ function openNav() {
 function closeNav() {
     document.getElementById("myNav").style.width = "0%";
 }
+
+$( "#sub" ).click(function() {
+    html2canvas($( ".area" ), {
+      onrendered: function(canvas) {
+      	$( "#selectedCanvas" ).html(canvas);
+      	var dataURL = canvas.toDataURL();
+      	var image = canvas.toDataURL("image/png").replace("image/png", "image/octet-stream");  // here is the most important part because if you dont replace you will get a DOM 18 exception.
+
+
+window.location.href=image; // 
+        //document.getElementById("selectedCanvas").html(canvas);
+      }
+    });
+});
