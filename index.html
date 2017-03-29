@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>al2 Project</title>
+      <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+  <link rel="stylesheet" href="/resources/demos/style.css">
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/mosiko.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <header>
+      <img src="images/logo_trans.png" />
+    </header>
+    <div class="container">
+
+      <div class="row">
+        <div class="col-md-8" id="draw-area">
+          <div class="area">
+          	  <!--<div id="" class="draggable draggableMS ui-widget-content ms001 ms">
+    			<p>MS001</p>
+  			  </div>-->
+          </div>
+        </div>
+        <div class="col-md-4 addShapes" id="actions">
+          <div class="row">
+            <h4>Shapes</h4>
+          </div>
+          <div class="row">
+          	<div class="col-md-3">
+          		<div id="ms001" class="addMS"><img src="images/ms001.png" /></div>
+          	</div>
+          	<div class="col-md-3">
+          		<div id="ms002" class="addMS"><img src="images/ms002.png" /></div>
+          	</div>
+          	<div class="col-md-3">
+          		<div id="ms003" class="addMS"><img src="images/ms003.png" /></div>
+          	</div>
+          	<div class="col-md-3">
+          		<div id="ms004" class="addMS"><img src="images/ms004.png" /></div>
+          	</div>
+          	<div class="col-md-3">
+          		<div id="ms005" class="addMS"><img src="images/ms005.png" /></div>
+          	</div>
+          	<div class="col-md-3">
+          		<div id="ms006" class="addMS"><img src="images/ms006.png" /></div>
+          	</div>
+          	<div class="col-md-3">
+          		<div id="ms007" class="addMS"><img src="images/ms007.png" /></div>
+          	</div>
+          	<div class="col-md-3">
+          		<div id="ms008" class="addMS"><img src="images/ms008.png" /></div>
+          	</div>
+          	<div class="col-md-3">
+          		<div id="ms009" class="addMS"><img src="images/ms009.png" /></div>
+          	</div>
+          	<div class="col-md-3">
+          		<div id="ms010" class="addMS"><img src="images/ms010.png" /></div>
+          	</div>
+          	<div class="col-md-3">
+          		<div id="ms011" class="addMS"><img src="images/ms011.png" /></div>
+          	</div>
+          	<div class="col-md-3">
+          		<div id="ms012" class="addMS"><img src="images/ms012.png" /></div>
+          	</div>
+          	<div class="col-md-3">
+          		<div id="ms013" class="addMS"><img src="images/ms013.png" /></div>
+          	</div>
+          	<div class="col-md-3">
+          		<div id="ms014" class="addMS"><img src="images/ms014.png" /></div>
+          	</div>
+          	<div class="col-md-3">
+          		<div id="ms015" class="addMS"><img src="images/ms015.png" /></div>
+          	</div>
+          	<div class="col-md-3">
+          		<div id="ms016" class="addMS"><img src="images/ms015.png" /></div>
+          	</div>
+          	<div class="col-md-3">
+          		<div id="ms017" class="addMS"><img src="images/ms015.png" /></div>
+          	</div>
+          	<div class="col-md-3">
+          		<div id="ms018" class="addMS"><img src="images/ms015.png" /></div>
+          	</div>
+          	<div class="col-md-3">
+          		<div id="ms019" class="addMS"><img src="images/ms015.png" /></div>
+          	</div>
+          	<div class="col-md-3">
+          		<div id="ms020" class="addMS"><img src="images/ms015.png" /></div>
+          	</div>
+          	<div class="col-md-3">
+          		<div id="ms021" class="addMS"><img src="images/ms015.png" /></div>
+          	</div>
+          	<div class="col-md-3">
+          		<div id="ms022" class="addMS"><img src="images/ms015.png" /></div>
+          	</div>
+          	<div class="col-md-3">
+          		<div id="ms023" class="addMS"><img src="images/ms015.png" /></div>
+          	</div>
+          	<div class="col-md-3">
+          		<div id="ms024" class="addMS"><img src="images/ms015.png" /></div>
+          	</div>
+          	<div class="col-md-3">
+          		<div id="ms025" class="addMS"><img src="images/ms015.png" /></div>
+          	</div>
+          	<div class="col-md-3">
+          		<div id="ms015" class="addMS"><img src="images/ms015.png" /></div>
+          	</div>
+          	<div class="col-md-3">
+          		<div id="ms015" class="addMS"><img src="images/ms015.png" /></div>
+          	</div>
+          	<div class="col-md-3">
+          		<div id="ms015" class="addMS"><img src="images/ms015.png" /></div>
+          	</div>
+          	<div class="col-md-3">
+          		<div id="ms015" class="addMS"><img src="images/ms015.png" /></div>
+          	</div>
+          	<div class="col-md-3">
+          		<div id="ms015" class="addMS"><img src="images/ms015.png" /></div>
+          	</div>
+          	<div class="col-md-3">
+          		<div id="ms015" class="addMS"><img src="images/ms015.png" /></div>
+          	</div>
+          	<div class="col-md-3">
+          		<div id="ms015" class="addMS"><img src="images/ms015.png" /></div>
+          	</div>
+          	<div class="col-md-3">
+          		<div id="ms015" class="addMS"><img src="images/ms015.png" /></div>
+          	</div>
+          	<div class="col-md-3">
+          		<div id="ms015" class="addMS"><img src="images/ms015.png" /></div>
+          	</div>
+          </div>
+          <div class="row">
+            <h4>Choose Colours</h4>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+
+      </div>
+    </div>
+    <footer>
+      Powered by digiverse.gr
+    </footer>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/mosiko.js"></script>
+      <script>
+  $( function() {
+    $( "#draggable" ).draggable({ axis: "y" });
+    $( "#draggable2" ).draggable({ axis: "x" });
+ 
+    $( "#draggable3" ).draggable({ containment: ".area", grid: [ 50, 50 ] });
+    $( ".draggableMS" ).draggable({ containment: ".area", grid: [ 50, 50 ] });
+  } );
+  </script>
+  </body>
+</html>

@@ -1,0 +1,104 @@
+body {
+    background: #ededed;
+}
+
+header, footer {
+    text-align: center;
+    padding: 25px;
+}
+
+#draw-area, #actions{
+	padding: 10px;
+	background: white;
+	border: 2px solid #13c0d8;
+}
+
+#draw-area {
+    min-height: 500px;
+    border-right: 0px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+#actions {
+    min-height: 500px;
+    border-left: 0px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+.area {
+    background: #f9f9f9;
+    width: 700px;
+    min-height: 450px;
+}
+.addShapes img {
+    width: 100%;
+}
+.ms{
+    background: white;
+    border: 1px solid black;
+    text-align: center;
+}
+.ms001, .ms017, .ms021, .ms039, .ms050 {
+    width: 50px;
+    height: 50px;
+}
+.ms002, .ms018, .ms022, .ms040, .ms051 {
+    width: 100px;
+    height: 50px;
+}
+.ms003, .ms019, .ms023, .ms041, .ms052 {
+    width: 150px;
+    height: 50px;
+}
+.ms004 , .ms020, .ms024, .ms042, .ms053{
+    width: 200px;
+    height: 50px;
+}
+.ms005, .ms025, .ms043, .ms054 {
+    width: 50px;
+    height: 100px;
+}
+.ms006, .ms026, .ms027, .ms044, .ms055 {
+    width: 100px;
+    height: 100px;
+}
+.ms007 {
+    width: 150px;
+    height: 100px;
+}
+.ms008, .ms045{
+    width: 200px;
+    height: 100px;
+}
+.ms009, .ms046{
+    width: 50px;
+    height: 150px;
+}
+.ms010, .ms047{
+    width: 100px;
+    height: 150px;
+}
+.ms011{
+    width: 150px;
+    height: 150px;
+}
+.ms012{
+    width: 200px;
+    height: 150px;
+}
+.ms013, .ms048{
+    width: 50px;
+    height: 200px;
+}
+.ms014, .ms049{
+    width: 100px;
+    height: 200px;
+}
+.ms015{
+    width: 150px;
+    height: 200px;
+}
+.ms016{
+    width: 200px;
+    height: 200px;
+}
