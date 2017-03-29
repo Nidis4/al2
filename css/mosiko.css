@@ -1,37 +1,46 @@
 body {
     background: #ededed;
+    border: 5px solid #13c0d8;
+    height: 100%;
 }
 
 header, footer {
     text-align: center;
-    padding: 25px;
+    padding: 19px 0px 21px;
 }
 
 #draw-area, #actions{
 	padding: 10px;
 	background: white;
-	border: 2px solid #13c0d8;
 }
 
 #draw-area {
     min-height: 500px;
     border-right: 0px;
-    border-top-left-radius: 20px;
-    border-bottom-left-radius: 20px;
 }
 #actions {
     min-height: 500px;
     border-left: 0px;
-    border-top-right-radius: 20px;
-    border-bottom-right-radius: 20px;
+    background: #13c0d8;
 }
 .area {
-    background: #f9f9f9;
     width: 700px;
     min-height: 450px;
+    /*border: 1px solid #efefef;*/
+    margin-left: auto;
+    margin-right: auto;
+    background-image: url('../images/background_draw.png');
+    background-color: #ededed;
 }
 .addShapes img {
     width: 100%;
+}
+.addCL img{
+    width: 100%;
+}
+#collapseOne .panel-body {
+    max-height: 445px;
+    overflow: auto;
 }
 .ms{
     background: white;
@@ -101,4 +110,7 @@ header, footer {
 .ms016{
     width: 200px;
     height: 200px;
+}
+.ms.active {
+    border: 4px solid #13c0d8;
 }
