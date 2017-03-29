@@ -6,9 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <title>al2 Project</title>
-     <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet"> 
-      <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
-  <link rel="stylesheet" href="/resources/demos/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Squada+One" rel="stylesheet">  
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+  	<link rel="stylesheet" href="/resources/demos/style.css">
     <!-- Bootstrap -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/mosiko.css" rel="stylesheet">
@@ -30,7 +31,7 @@
   <!-- Overlay content -->
   <div class="overlay-content">
     <img src="images/logo_Final.PNG" width="400px" />
-    <a href="#" onclick="closeNav()">mos-i-ko system <strong>Design Studio</strong></a>
+    <a href="#" onclick="closeNav()">mos-i-ko system <span>Design Studio</span></a>
     Create your personal architectural landscape
   </div>
 
@@ -256,12 +257,46 @@
 			      </div>
 			    </div>
 			  </div>
+			  <div class="panel panel-default">
+			    <div class="panel-heading" role="tab" id="headingFour">
+			      <h4 class="panel-title">
+			        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+			          Get ideas
+			        </a>
+			      </h4>
+			    </div>
+			    <div id="collapseFour" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFour">
+			      <div class="panel-body">
+			      	<div class="col-md-4">
+			      		<div class="proposal1" data-toggle="modal" data-target="#modalImage"><img src="images/proposal1.jpg" class="img-responsive img-thumbnail" alt="Proposal 1">Proposal 1</div>
+			      	</div>
+			      	<div class="col-md-4">
+			      		<div class="proposal2">Proposal 2</div>
+			      	</div>
+			      	<div class="col-md-4">
+			      		<div class="proposal3">Proposal 3</div>
+			      	</div>
+			      	<div class="col-md-4">
+			      		<div class="proposal4">Proposal 4</div>
+			      	</div>
+			      	<div class="col-md-4">
+			      		<div class="proposal5">Proposal 5</div>
+			      	</div>
+			      	<div class="col-md-4">
+			      		<div class="proposal6">Proposal 6</div>
+			      	</div>
+			      	<div class="col-md-4">
+			      		<div class="proposal7">Proposal 7</div>
+			      	</div>
+			      </div>
+			    </div>
+			  </div>
 			</div>
         </div>
       </div>
     </div>
 
-    <!-- Modal -->
+    <!-- Modal  Form-->
 	<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
 	  <div class="modal-dialog" role="document">
 	    <div class="modal-content">
@@ -294,6 +329,20 @@
 	      <div class="modal-footer">
 	        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
 	        <button type="button" class="btn btn-primary" id="sub">Submit Form</button>
+	      </div>
+	    </div>
+	  </div>
+	</div>
+
+	<!-- Modal  Form-->
+	<div class="modal fade" id="modalImage" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+	  <div class="modal-dialog" role="document">
+	    <div class="modal-content">
+	      <div class="modal-header">
+	        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+	      </div>
+	      <div class="modal-body">
+	        <img src="images/proposal1.jpg" width="400px" />
 	      </div>
 	    </div>
 	  </div>

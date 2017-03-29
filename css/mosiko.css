@@ -11,6 +11,11 @@ header, footer {
     padding: 19px 0px 21px;
 }
 
+span{
+    
+    font-family: 'Squada One', cursive;
+
+}
 #draw-area, #actions{
 	padding: 10px;
 	background: white;
