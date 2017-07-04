@@ -68,13 +68,17 @@ span{
     border: 1px solid black;
     text-align: center;
 }
+.draggableMS span {
+    display: none;
+}
 
 .ms017, .ms018, .ms019, .ms020, .ms021, .ms022, .ms023, .ms024, .ms025, .ms026, .ms051, .ms052, .ms053, .ms054, .ms055{
 	background: rgb(255,255,255);
 	/*border: 5px solid rgba(255, 255, 255, .5);*/
 	/*border: 5px solid grey;*/
 }
-.ms001, .ms017, .ms021, .ms039, .ms050 {
+
+.ms001, .ms017, .ms021, .ms039, .ms050, .ms030 {
     width: 50px;
     height: 50px;
     padding-top: 12px;
@@ -154,6 +158,114 @@ span{
     height: 200px;
     padding-top: 85px;
 }
+
+.ms028{
+    width: 92px;
+    height: 50px;
+    background-size: 92px 50px;
+    margin-left: 4px;
+    margin-right: 4px;
+}
+.ms029 {
+    width: 140px;
+    height: 50px;
+    background-size: 140px 50px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+.ms030{
+    width: 170px;
+    height: 50px;
+    background-size: 170px 50px ;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+.ms031{
+    width: 170px;
+    height: 50px;
+    background-size: 170px 50px ;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+.ms030{
+    width: 170px;
+    height: 50px;
+    background-size: 170px 50px ;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+.ms030, .ms031{
+    width: 170px;
+    height: 50px;
+    background-size: 170px 50px ;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+.ms032{
+    width: 220px;
+    height: 50px;
+    background-size: 220px 50px ;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+.ms033{
+    width: 270px;
+    height: 50px;
+    background-size: 270px 50px ;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+.ms034{
+    width: 320px;
+    height: 50px;
+    background-size: 320px 50px ;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+.ms035{
+    width: 370px;
+    height: 50px;
+    background-size: 370px 50px ;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+.ms036{
+    width: 420px;
+    height: 50px;
+    background-size: 420px 50px ;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+.ms037{
+    width: 146px;
+    height: 150px;
+    background-size: 146px 150px ;
+    margin-left: 2px;
+    margin-right: 2px;
+}
+.ms038{
+    width: 186px;
+    height: 150px;
+    background-size: 186px 150px ;
+    margin-left: 7px;
+    margin-right: 7px;
+}
+.ms028, .ms029, .ms030, .ms031, .ms032, .ms033, .ms034, .ms035, .ms036, .ms037, .ms038 {
+    background-image: url('../images/base25.png');
+    background-color: rgba(0, 0, 0, 0);
+    background-repeat: repeat;
+    background-color: white;
+    background-repeat: no-repeat;
+    border: 0px;
+    padding-top: 15px;
+    color: black !important;
+}
+
+.ms037, .ms038{
+    background-image: url('../images/base75.png');
+}
+
 .ms.active {
     border: 4px solid #13c0d8 !important;
 }
