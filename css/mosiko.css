@@ -1,14 +1,16 @@
+html { height: 100%; }
+body { min-height: 100%; }
 body {
     background: #ededed;
     border: 5px solid #13c0d8;
-    height: 100%;
     font-family: 'Roboto Condensed', sans-serif;
+    padding-right: 0px !important;
 
 }
 
 header, footer {
     text-align: center;
-    padding: 19px 0px 21px;
+    padding: 10px 0px 15px;
 }
 
 span{
@@ -30,13 +32,18 @@ span{
     border-left: 0px;
     background: #13c0d8;
 }
+.row.buttons {
+    margin: auto;
+    text-align: center;
+    padding-top: 10px;
+}
 .area {
     width: 700px;
     min-height: 450px;
     /*border: 1px solid #efefef;*/
     margin-left: auto;
     margin-right: auto;
-    background-image: url('../images/background_draw.png');
+    /*background-image: url('../images/background_draw.png');*/
     background-color: #ededed;
 }
 .addShapes img {
@@ -45,83 +52,115 @@ span{
 .addCL img{
     width: 100%;
 }
-#collapseOne .panel-body {
+.addCL {
+    text-align: center;
+    min-height: 101px;
+    font-size: 12px;
+    line-height: 15px;
+}
+.panel-body {
     max-height: 445px;
     overflow: auto;
 }
-.ms{
-    background: white;
+.ms {
+    /*background: rgba(255,255,255,0.50);*/
+    background: rgba(255,255,255);
     border: 1px solid black;
     text-align: center;
+}
+
+.ms017, .ms018, .ms019, .ms020, .ms021, .ms022, .ms023, .ms024, .ms025, .ms026, .ms051, .ms052, .ms053, .ms054, .ms055{
+	background: rgb(255,255,255);
+	/*border: 5px solid rgba(255, 255, 255, .5);*/
+	/*border: 5px solid grey;*/
 }
 .ms001, .ms017, .ms021, .ms039, .ms050 {
     width: 50px;
     height: 50px;
+    padding-top: 12px;
 }
 .ms002, .ms018, .ms022, .ms040, .ms051 {
     width: 100px;
     height: 50px;
+    padding-top: 12px;
 }
 .ms003, .ms019, .ms023, .ms041, .ms052 {
     width: 150px;
     height: 50px;
+    padding-top: 12px;
 }
 .ms004 , .ms020, .ms024, .ms042, .ms053{
     width: 200px;
     height: 50px;
+    padding-top: 12px;
 }
 .ms005, .ms025, .ms043, .ms054 {
     width: 50px;
     height: 100px;
+    padding-top: 37px;
 }
 .ms006, .ms026, .ms027, .ms044, .ms055 {
     width: 100px;
     height: 100px;
+    padding-top: 37px;
 }
 .ms007 {
     width: 150px;
     height: 100px;
+    padding-top: 37px;
 }
 .ms008, .ms045{
     width: 200px;
     height: 100px;
+    padding-top: 37px;
 }
 .ms009, .ms046{
     width: 50px;
     height: 150px;
+    padding-top: 62px;
 }
 .ms010, .ms047{
     width: 100px;
     height: 150px;
+    padding-top: 62px;
 }
 .ms011{
     width: 150px;
     height: 150px;
+    padding-top: 62px;
 }
 .ms012{
     width: 200px;
     height: 150px;
+    padding-top: 62px;
 }
 .ms013, .ms048{
     width: 50px;
     height: 200px;
+    padding-top: 85px;
 }
 .ms014, .ms049{
     width: 100px;
     height: 200px;
+    padding-top: 85px;
 }
 .ms015{
     width: 150px;
     height: 200px;
+    padding-top: 85px;
 }
 .ms016{
     width: 200px;
     height: 200px;
+    padding-top: 85px;
 }
 .ms.active {
-    border: 4px solid #13c0d8;
+    border: 4px solid #13c0d8 !important;
 }
 
+#myModal{
+    padding: 0px !important;
+}
 
  /* The Overlay (background) */
 .overlay {

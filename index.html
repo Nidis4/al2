@@ -9,10 +9,9 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Squada+One" rel="stylesheet">  
     <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
-  	<link rel="stylesheet" href="/resources/demos/style.css">
     <!-- Bootstrap -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link href="css/mosiko.css" rel="stylesheet">
+    <link href="css/mosiko.css?version=9" rel="stylesheet">
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -31,7 +30,7 @@
   <!-- Overlay content -->
   <div class="overlay-content">
     <img src="images/logo_Final.PNG" width="400px" />
-    <a href="#" onclick="closeNav()">mos-i-ko system <span>Design Studio</span></a>
+    <a href="#" onclick="closeNav()">mos-i-ko system</a>
     Create your personal architectural landscape
   </div>
 
@@ -50,8 +49,14 @@
 	    			<p>MS001</p>
 	  			  </div>-->
 	        </div>
+	        <div class="row buttons">
+	        	<div class="btn-default btn btn-primary" id="select-all">Select All</div>
+	        	<div class="btn-default btn btn-info" id="deselect-all">Deselect All</div>
+	        	<div class="btn-default btn btn-warning" id="delete-selected">Delete Selected</div>
+	        	<div class="btn-default btn btn-danger" id="clear-all">Clear Area</div>
+	        </div>
         	<footer>
-      			Powered by digiverse.gr
+      			 Powered by <a href="http://www.digiverese.gr" target="_blank"><img src="http://www.digiverse.gr/favicon.png"> Digiverse.gr</a>
     		</footer>
         </div>
         <div class="col-md-4 addShapes" id="actions">
@@ -60,141 +65,195 @@
 			    <div class="panel-heading" role="tab" id="headingOne">
 			      <h4 class="panel-title">
 			        <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-			          Choose Mosiko
+			          Choose Mos-i-ko
 			        </a>
 			      </h4>
 			    </div>
 			    <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
 			      <div class="panel-body">
-			        <div class="col-md-3">
-		          		<div id="ms001" class="addMS"><img src="images/ms001.png" /></div>
-		          	</div>
-		          	<div class="col-md-3">
-		          		<div id="ms002" class="addMS"><img src="images/ms002.png" /></div>
-		          	</div>
-		          	<div class="col-md-3">
-		          		<div id="ms003" class="addMS"><img src="images/ms003.png" /></div>
-		          	</div>
-		          	<div class="col-md-3">
-		          		<div id="ms004" class="addMS"><img src="images/ms004.png" /></div>
-		          	</div>
-		          	<div class="col-md-3">
-		          		<div id="ms005" class="addMS"><img src="images/ms005.png" /></div>
-		          	</div>
-		          	<div class="col-md-3">
-		          		<div id="ms006" class="addMS"><img src="images/ms006.png" /></div>
-		          	</div>
-		          	<div class="col-md-3">
-		          		<div id="ms007" class="addMS"><img src="images/ms007.png" /></div>
-		          	</div>
-		          	<div class="col-md-3">
-		          		<div id="ms008" class="addMS"><img src="images/ms008.png" /></div>
-		          	</div>
-		          	<div class="col-md-3">
-		          		<div id="ms009" class="addMS"><img src="images/ms009.png" /></div>
-		          	</div>
-		          	<div class="col-md-3">
-		          		<div id="ms010" class="addMS"><img src="images/ms010.png" /></div>
-		          	</div>
-		          	<div class="col-md-3">
-		          		<div id="ms011" class="addMS"><img src="images/ms011.png" /></div>
-		          	</div>
-		          	<div class="col-md-3">
-		          		<div id="ms012" class="addMS"><img src="images/ms012.png" /></div>
-		          	</div>
-		          	<div class="col-md-3">
-		          		<div id="ms013" class="addMS"><img src="images/ms013.png" /></div>
-		          	</div>
-		          	<div class="col-md-3">
-		          		<div id="ms014" class="addMS"><img src="images/ms014.png" /></div>
-		          	</div>
-		          	<div class="col-md-3">
-		          		<div id="ms015" class="addMS"><img src="images/ms015.png" /></div>
-		          	</div>
-		          	<div class="col-md-3">
-		          		<div id="ms016" class="addMS"><img src="images/ms015.png" /></div>
-		          	</div>
-		          	<div class="col-md-3">
-		          		<div id="ms017" class="addMS"><img src="images/ms015.png" /></div>
-		          	</div>
-		          	<div class="col-md-3">
-		          		<div id="ms018" class="addMS"><img src="images/ms015.png" /></div>
-		          	</div>
-		          	<div class="col-md-3">
-		          		<div id="ms019" class="addMS"><img src="images/ms015.png" /></div>
-		          	</div>
-		          	<div class="col-md-3">
-		          		<div id="ms020" class="addMS"><img src="images/ms015.png" /></div>
-		          	</div>
-		          	<div class="col-md-3">
-		          		<div id="ms021" class="addMS"><img src="images/ms015.png" /></div>
-		          	</div>
-		          	<div class="col-md-3">
-		          		<div id="ms022" class="addMS"><img src="images/ms015.png" /></div>
-		          	</div>
-		          	<div class="col-md-3">
-		          		<div id="ms023" class="addMS"><img src="images/ms015.png" /></div>
-		          	</div>
-		          	<div class="col-md-3">
-		          		<div id="ms024" class="addMS"><img src="images/ms015.png" /></div>
-		          	</div>
-		          	<div class="col-md-3">
-		          		<div id="ms025" class="addMS"><img src="images/ms015.png" /></div>
-		          	</div>
-		          	<div class="col-md-3">
-		          		<div id="ms026" class="addMS"><img src="images/ms015.png" /></div>
-		          	</div>
-		          	<div class="col-md-3">
-		          		<div id="ms039" class="addMS"><img src="images/ms015.png" /></div>
-		          	</div>
-		          	<div class="col-md-3">
-		          		<div id="ms040" class="addMS"><img src="images/ms015.png" /></div>
-		          	</div>
-		          	<div class="col-md-3">
-		          		<div id="ms041" class="addMS"><img src="images/ms015.png" /></div>
-		          	</div>
-		          	<div class="col-md-3">
-		          		<div id="ms042" class="addMS"><img src="images/ms015.png" /></div>
-		          	</div>
-		          	<div class="col-md-3">
-		          		<div id="ms043" class="addMS"><img src="images/ms015.png" /></div>
-		          	</div>
-		          	<div class="col-md-3">
-		          		<div id="ms044" class="addMS"><img src="images/ms015.png" /></div>
-		          	</div>
-		          	<div class="col-md-3">
-		          		<div id="ms045" class="addMS"><img src="images/ms015.png" /></div>
-		          	</div>
-		          	<div class="col-md-3">
-		          		<div id="ms046" class="addMS"><img src="images/ms015.png" /></div>
-		          	</div>
-		          	<div class="col-md-3">
-		          		<div id="ms047" class="addMS"><img src="images/ms015.png" /></div>
-		          	</div>
-		          	<div class="col-md-3">
-		          		<div id="ms048" class="addMS"><img src="images/ms015.png" /></div>
-		          	</div>
-		          	<div class="col-md-3">
-		          		<div id="ms049" class="addMS"><img src="images/ms015.png" /></div>
-		          	</div>
-		          	<div class="col-md-3">
-		          		<div id="ms050" class="addMS"><img src="images/ms015.png" /></div>
-		          	</div>
-		          	<div class="col-md-3">
-		          		<div id="ms051" class="addMS"><img src="images/ms015.png" /></div>
-		          	</div>
-		          	<div class="col-md-3">
-		          		<div id="ms052" class="addMS"><img src="images/ms015.png" /></div>
-		          	</div>
-		          	<div class="col-md-3">
-		          		<div id="ms053" class="addMS"><img src="images/ms015.png" /></div>
-		          	</div>
-		          	<div class="col-md-3">
-		          		<div id="ms054" class="addMS"><img src="images/ms015.png" /></div>
-		          	</div>
-		          	<div class="col-md-3">
-		          		<div id="ms055" class="addMS"><img src="images/ms015.png" /></div>
-		          	</div>		          	
+			      	<div class="row">
+			      		<div class="col-md-12">
+			      			<h4>Floor Units</h4>
+			      		</div>
+			      	</div>
+			      	<div class="row">
+				        <div class="col-md-3">
+			          		<div id="ms001" class="addMS"><img src="images/ms001.png" /></div>
+			          	</div>
+			          	<div class="col-md-3">
+			          		<div id="ms002" class="addMS"><img src="images/ms002.png" /></div>
+			          	</div>
+			          	<div class="col-md-3">
+			          		<div id="ms003" class="addMS"><img src="images/ms003.png" /></div>
+			          	</div>
+			          	<div class="col-md-3">
+			          		<div id="ms004" class="addMS"><img src="images/ms004.png" /></div>
+			          	</div>
+			          	<div class="col-md-3">
+			          		<div id="ms005" class="addMS"><img src="images/ms005.png" /></div>
+			          	</div>
+			          	<div class="col-md-3">
+			          		<div id="ms006" class="addMS"><img src="images/ms006.png" /></div>
+			          	</div>
+			          	<div class="col-md-3">
+			          		<div id="ms007" class="addMS"><img src="images/ms007.png" /></div>
+			          	</div>
+			          	<div class="col-md-3">
+			          		<div id="ms008" class="addMS"><img src="images/ms008.png" /></div>
+			          	</div>
+			          	<div class="col-md-3">
+			          		<div id="ms009" class="addMS"><img src="images/ms009.png" /></div>
+			          	</div>
+			          	<div class="col-md-3">
+			          		<div id="ms010" class="addMS"><img src="images/ms010.png" /></div>
+			          	</div>
+			          	<div class="col-md-3">
+			          		<div id="ms011" class="addMS"><img src="images/ms011.png" /></div>
+			          	</div>
+			          	<div class="col-md-3">
+			          		<div id="ms012" class="addMS"><img src="images/ms012.png" /></div>
+			          	</div>
+			          	<div class="col-md-3">
+			          		<div id="ms013" class="addMS"><img src="images/ms013.png" /></div>
+			          	</div>
+			          	<div class="col-md-3">
+			          		<div id="ms014" class="addMS"><img src="images/ms014.png" /></div>
+			          	</div>
+			          	<div class="col-md-3">
+			          		<div id="ms015" class="addMS"><img src="images/ms015.png" /></div>
+			          	</div>
+			          	<div class="col-md-3">
+			          		<div id="ms016" class="addMS"><img src="images/ms016.png" /></div>
+			          	</div>
+			          	<div class="col-md-3">
+			          		<div id="ms017" class="addMS"><img src="images/ms017.png" /></div>
+			          	</div>
+			          	<div class="col-md-3">
+			          		<div id="ms018" class="addMS"><img src="images/ms018.png" /></div>
+			          	</div>
+			          	<div class="col-md-3">
+			          		<div id="ms019" class="addMS"><img src="images/ms019.png" /></div>
+			          	</div>
+			          	<div class="col-md-3">
+			          		<div id="ms020" class="addMS"><img src="images/ms020.png" /></div>
+			          	</div>
+			          	<div class="col-md-3">
+			          		<div id="ms021" class="addMS"><img src="images/ms021.png" /></div>
+			          	</div>
+			          	<div class="col-md-3">
+			          		<div id="ms022" class="addMS"><img src="images/ms022.png" /></div>
+			          	</div>
+			          	<div class="col-md-3">
+			          		<div id="ms023" class="addMS"><img src="images/ms023.png" /></div>
+			          	</div>
+			          	<div class="col-md-3">
+			          		<div id="ms024" class="addMS"><img src="images/ms024.png" /></div>
+			          	</div>
+			          	<div class="col-md-3">
+			          		<div id="ms025" class="addMS"><img src="images/ms025.png" /></div>
+			          	</div>
+			          	<div class="col-md-3">
+			          		<div id="ms026" class="addMS"><img src="images/ms026.png" /></div>
+			          	</div>
+			        </div>
+		          	<div class="row">
+			      		<div class="col-md-12">
+			      			<h4>Wall Units</h4>
+			      		</div>
+			      	</div>
+			      	<div class="row">
+			          	<div class="col-md-3">
+			          		<div id="ms039" class="addMS"><img src="images/ms039.png" /></div>
+			          	</div>
+			          	<div class="col-md-3">
+			          		<div id="ms040" class="addMS"><img src="images/ms040.png" /></div>
+			          	</div>
+			          	<div class="col-md-3">
+			          		<div id="ms041" class="addMS"><img src="images/ms041.png" /></div>
+			          	</div>
+			          	<div class="col-md-3">
+			          		<div id="ms042" class="addMS"><img src="images/ms042.png" /></div>
+			          	</div>
+			          	<div class="col-md-3">
+			          		<div id="ms043" class="addMS"><img src="images/ms043.png" /></div>
+			          	</div>
+			          	<div class="col-md-3">
+			          		<div id="ms044" class="addMS"><img src="images/ms044.png" /></div>
+			          	</div>
+			          	<div class="col-md-3">
+			          		<div id="ms045" class="addMS"><img src="images/ms045.png" /></div>
+			          	</div>
+			          	<div class="col-md-3">
+			          		<div id="ms046" class="addMS"><img src="images/ms046.png" /></div>
+			          	</div>
+			          	<div class="col-md-3">
+			          		<div id="ms047" class="addMS"><img src="images/ms047.png" /></div>
+			          	</div>
+			          	<div class="col-md-3">
+			          		<div id="ms048" class="addMS"><img src="images/ms048.png" /></div>
+			          	</div>
+			          	<div class="col-md-3">
+			          		<div id="ms049" class="addMS"><img src="images/ms049.png" /></div>
+			          	</div>
+			          	<div class="col-md-3">
+			          		<div id="ms050" class="addMS"><img src="images/ms050.png" /></div>
+			          	</div>
+			          	<div class="col-md-3">
+			          		<div id="ms051" class="addMS"><img src="images/ms051.png" /></div>
+			          	</div>
+			          	<div class="col-md-3">
+			          		<div id="ms052" class="addMS"><img src="images/ms052.png" /></div>
+			          	</div>
+			          	<div class="col-md-3">
+			          		<div id="ms053" class="addMS"><img src="images/ms053.png" /></div>
+			          	</div>
+			          	<div class="col-md-3">
+			          		<div id="ms054" class="addMS"><img src="images/ms054.png" /></div>
+			          	</div>
+			          	<div class="col-md-3">
+			          		<div id="ms055" class="addMS"><img src="images/ms055.png" /></div>
+			          	</div>
+			        </div>
+			        <div class="row">
+			      		<div class="col-md-12">
+			      			<h4>Base Units</h4>
+			      		</div>
+			      	</div>
+			      	<div class="row">
+			          	<div class="col-md-3">
+			          		<div id="ms028" class="addMS"><img src="images/ms028.png" /></div>
+			          	</div>
+			          	<div class="col-md-3">
+			          		<div id="ms029" class="addMS"><img src="images/ms029.png" /></div>
+			          	</div>
+			          	<div class="col-md-3">
+			          		<div id="ms030" class="addMS"><img src="images/ms030.png" /></div>
+			          	</div>
+			          	<div class="col-md-3">
+			          		<div id="ms031" class="addMS"><img src="images/ms031.png" /></div>
+			          	</div>
+			          	<div class="col-md-3">
+			          		<div id="ms032" class="addMS"><img src="images/ms032.png" /></div>
+			          	</div>
+			          	<div class="col-md-3">
+			          		<div id="ms033" class="addMS"><img src="images/ms033.png" /></div>
+			          	</div>
+			          	<div class="col-md-3">
+			          		<div id="ms034" class="addMS"><img src="images/ms034.png" /></div>
+			          	</div>
+			          	<div class="col-md-3">
+			          		<div id="ms035" class="addMS"><img src="images/ms035.png" /></div>
+			          	</div>
+			          	<div class="col-md-3">
+			          		<div id="ms036" class="addMS"><img src="images/ms036.png" /></div>
+			          	</div>
+			          	<div class="col-md-3">
+			          		<div id="ms037" class="addMS"><img src="images/ms037.png" /></div>
+			          	</div>
+			          	<div class="col-md-3">
+			          		<div id="ms038" class="addMS"><img src="images/ms038.png" /></div>
+			          	</div>	
+			        </div>		          	
 			      </div>
 			    </div>
 			  </div>
@@ -202,42 +261,165 @@
 			    <div class="panel-heading" role="tab" id="headingTwo">
 			      <h4 class="panel-title">
 			        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-			          Choose Color
+			          Pick Colors
 			        </a>
 			      </h4>
 			    </div>
 			    <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
 			      <div class="panel-body">
 			        <div class="col-md-3">
-		          		<div id="col001" class="addCL"><img src="images/cl001.jpg" /></div>
+		          		<div id="c1" class="addCL"><img src="images/xromatologio/c1.jpg" />C1</div>
 		          	</div>
 		          	<div class="col-md-3">
-		          		<div id="col002" class="addCL"><img src="images/ms001.png" /></div>
+		          		<div id="c3" class="addCL"><img src="images/xromatologio/c3.jpg" />C3</div>
 		          	</div>
 		          	<div class="col-md-3">
-		          		<div id="col003" class="addCL"><img src="images/ms001.png" /></div>
+		          		<div id="c5" class="addCL"><img src="images/xromatologio/c5.jpg" />C5</div>
 		          	</div>
 		          	<div class="col-md-3">
-		          		<div id="col004" class="addCL"><img src="images/ms001.png" /></div>
+		          		<div id="c6" class="addCL"><img src="images/xromatologio/c6.jpg" />C6</div>
 		          	</div>
 		          	<div class="col-md-3">
-		          		<div id="col005" class="addCL"><img src="images/ms001.png" /></div>
+		          		<div id="c7" class="addCL"><img src="images/xromatologio/c7.jpg" />C7</div>
 		          	</div>
 		          	<div class="col-md-3">
-		          		<div id="col006" class="addCL"><img src="images/ms001.png" /></div>
+		          		<div id="c9" class="addCL"><img src="images/xromatologio/c9.jpg" />C9</div>
 		          	</div>
 		          	<div class="col-md-3">
-		          		<div id="col007" class="addCL"><img src="images/ms001.png" /></div>
+		          		<div id="c10" class="addCL"><img src="images/xromatologio/c10.jpg" />C10</div>
 		          	</div>
 		          	<div class="col-md-3">
-		          		<div id="col008" class="addCL"><img src="images/ms001.png" /></div>
+		          		<div id="c11" class="addCL"><img src="images/xromatologio/c11.jpg" />C11</div>
 		          	</div>
 		          	<div class="col-md-3">
-		          		<div id="col009" class="addCL"><img src="images/ms001.png" /></div>
+		          		<div id="c12" class="addCL"><img src="images/xromatologio/c12.jpg" />C12</div>
 		          	</div>
 		          	<div class="col-md-3">
-		          		<div id="col010" class="addCL"><img src="images/ms001.png" /></div>
+		          		<div id="c13" class="addCL"><img src="images/xromatologio/c13.jpg" />C13</div>
 		          	</div>
+		          	<div class="col-md-3">
+		          		<div id="c14" class="addCL"><img src="images/xromatologio/c14.jpg" />C14</div>
+		          	</div>
+		          	<div class="col-md-3">
+		          		<div id="c15" class="addCL"><img src="images/xromatologio/c15.jpg" />C15</div>
+		          	</div>
+		          	<div class="col-md-3">
+		          		<div id="c19" class="addCL"><img src="images/xromatologio/c19.jpg" />C19</div>
+		          	</div>
+		          	<div class="col-md-3">
+		          		<div id="c20" class="addCL"><img src="images/xromatologio/c20.jpg" />C20</div>
+		          	</div>
+		          	<div class="col-md-3">
+		          		<div id="c21" class="addCL"><img src="images/xromatologio/c21.jpg" />C21</div>
+		          	</div>
+		          	<div class="col-md-3">
+		          		<div id="c22" class="addCL"><img src="images/xromatologio/c22.jpg" />C22</div>
+		          	</div>
+		          	<div class="col-md-3">
+		          		<div id="c23" class="addCL"><img src="images/xromatologio/c23.jpg" />C23</div>
+		          	</div>
+		          	<div class="col-md-3">
+		          		<div id="c24" class="addCL"><img src="images/xromatologio/c24.jpg" />C24</div>
+		          	</div>
+		          	<div class="col-md-3">
+		          		<div id="c25" class="addCL"><img src="images/xromatologio/c25.jpg" />C25</div>
+		          	</div>
+		          	<div class="col-md-3">
+		          		<div id="c26" class="addCL"><img src="images/xromatologio/c26.jpg" />C26</div>
+		          	</div>
+		          	<div class="col-md-3">
+		          		<div id="c27" class="addCL"><img src="images/xromatologio/c27.jpg" />C27</div>
+		          	</div>
+		          	<div class="col-md-3">
+		          		<div id="c28" class="addCL"><img src="images/xromatologio/c28.jpg" />C28</div>
+		          	</div>
+		          	<div class="col-md-3">
+		          		<div id="c29" class="addCL"><img src="images/xromatologio/c29.jpg" />C29</div>
+		          	</div>
+		          	<div class="col-md-3">
+		          		<div id="c30" class="addCL"><img src="images/xromatologio/c30.jpg" />C30</div>
+		          	</div>
+		          	<div class="col-md-3">
+		          		<div id="c31" class="addCL"><img src="images/xromatologio/c31.jpg" />C31</div>
+		          	</div>
+		          	<div class="col-md-3">
+		          		<div id="c32" class="addCL"><img src="images/xromatologio/c32.jpg" />C32</div>
+		          	</div>
+		          	<div class="col-md-3">
+		          		<div id="c33" class="addCL"><img src="images/xromatologio/c33.jpg" />C33</div>
+		          	</div>
+		          	<div class="col-md-3">
+		          		<div id="c34" class="addCL"><img src="images/xromatologio/c34.jpg" />C34</div>
+		          	</div>
+		          	<!--<div class="col-md-3">
+		          		<div id="carrara" class="addCL"><img src="images/xromatologio/carrara.jpg" />Carrara</div>
+		          	</div>
+		          	<div class="col-md-3">
+		          		<div id="cement1" class="addCL"><img src="images/xromatologio/cement1.jpg" />Cement1</div>
+		          	</div>
+		          	<div class="col-md-3">
+		          		<div id="cement2" class="addCL"><img src="images/xromatologio/cement2.jpg" />Cement2</div>
+		          	</div>
+		          	<div class="col-md-3">
+		          		<div id="ethnic_patern" class="addCL"><img src="images/xromatologio/ethnic_patern.jpg" />Ethnic</div>
+		          	</div>
+		          	<div class="col-md-3">
+		          		<div id="glass_sanded" class="addCL"><img src="images/xromatologio/glass_sanded.jpg" />Glass Sanded</div>
+		          	</div>
+		          	<div class="col-md-3">
+		          		<div id="glass_smoked" class="addCL"><img src="images/xromatologio/glass_smoked.jpg" />Glass Smoked</div>
+		          	</div>
+		          	<div class="col-md-3">
+		          		<div id="glass_transparent" class="addCL"><img src="images/xromatologio/glass_transparent.jpg" />Glass</div>
+		          	</div>
+		          	<div class="col-md-3">
+		          		<div id="marquina" class="addCL"><img src="images/xromatologio/marquina.jpg" />Marquina</div>
+		          	</div>
+		          	<div class="col-md-3">
+		          		<div id="Pietra-grey" class="addCL"><img src="images/xromatologio/Pietra-grey.jpg" />Pietra Grey</div>
+		          	</div>-->
+		          	<div class="col-md-3">
+		          		<div id="solid_oak_11" class="addCL"><img src="images/xromatologio/solid_oak_11.jpg" />Solid Oak 11</div>
+		          	</div>
+		          	<div class="col-md-3">
+		          		<div id="solid_oak_12" class="addCL"><img src="images/xromatologio/solid_oak_12.jpg" />Solid Oak 12</div>
+		          	</div>
+		          	<div class="col-md-3">
+		          		<div id="solid_oak_13" class="addCL"><img src="images/xromatologio/solid_oak_13.jpg" />Solid Oak 13</div>
+		          	</div>
+		          	<div class="col-md-3">
+		          		<div id="solid_oak_14" class="addCL"><img src="images/xromatologio/solid_oak_14.jpg" />Solid Oak 14</div>
+		          	</div>
+		          	<div class="col-md-3">
+		          		<div id="solid_oak_15" class="addCL"><img src="images/xromatologio/solid_oak_15.jpg" />Solid Oak 15</div>
+		          	</div>
+		          	<!--<div class="col-md-3">
+		          		<div id="solid_smoked_eucalyptus" class="addCL"><img src="images/xromatologio/solid_smoked_eucalyptus.jpg" />Smoked Eucalyptus</div>
+		          	</div>-->
+		          	<div class="col-md-3">
+		          		<div id="solid_walnut_20" class="addCL"><img src="images/xromatologio/solid_walnut_20.jpg" />Solid Walnut 20</div>
+		          	</div>
+		          	<div class="col-md-3">
+		          		<div id="veneer_oak_12" class="addCL"><img src="images/xromatologio/veneer_oak_12.jpg" />Veneer Oak 12</div>
+		          	</div>
+		          	<div class="col-md-3">
+		          		<div id="veneer_oak_13" class="addCL"><img src="images/xromatologio/veneer_oak_13.jpg" />Veneer Oak 13</div>
+		          	</div>
+		          	<div class="col-md-3">
+		          		<div id="veneer_oak_14" class="addCL"><img src="images/xromatologio/veneer_oak_14.jpg" />Veneer Oak 14</div>
+		          	</div>
+		          	<div class="col-md-3">
+		          		<div id="veneer_oak_15" class="addCL"><img src="images/xromatologio/veneer_oak_15.jpg" />Veneer Oak 15</div>
+		          	</div>
+		          	<!--<div class="col-md-3">
+		          		<div id="veneer_smoked_eucalyptus" class="addCL"><img src="images/xromatologio/veneer_smoked_eucalyptus.jpg" />Veneer Eucalyptus</div>
+		          	</div>-->
+		          	<div class="col-md-3">
+		          		<div id="venner_walnut_20" class="addCL"><img src="images/xromatologio/venner_walnut_20.jpg" />Veneer Walnut 20</div>
+		          	</div>
+		          	<!--<div class="col-md-3">
+		          		<div id="volakas" class="addCL"><img src="images/xromatologio/volakas.jpg" />Volakas</div>
+		          	</div>-->
 			      </div>
 			    </div>
 			  </div>
@@ -245,52 +427,24 @@
 			    <div class="panel-heading" role="tab" id="headingThree">
 			      <h4 class="panel-title">
 			        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-			          Other Actions
+			          Get a Quote
 			        </a>
 			      </h4>
 			    </div>
 			    <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
 			      <div class="panel-body">
+			      <div class="row">
+				      <div class="col-md-12" style="margin-bottom: 30px;">
+				      	Please submit your design by clicking the button below and our representative will get in touch with you as soon as possible.	
+				      </div>
+			      </div>
 			      	<button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
 					  Submit
 					</button>
 			      </div>
 			    </div>
 			  </div>
-			  <div class="panel panel-default">
-			    <div class="panel-heading" role="tab" id="headingFour">
-			      <h4 class="panel-title">
-			        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-			          Get ideas
-			        </a>
-			      </h4>
-			    </div>
-			    <div id="collapseFour" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFour">
-			      <div class="panel-body">
-			      	<div class="col-md-4">
-			      		<div class="proposal1" data-toggle="modal" data-target="#modalImage"><img src="images/proposal1.jpg" class="img-responsive img-thumbnail" alt="Proposal 1">Proposal 1</div>
-			      	</div>
-			      	<div class="col-md-4">
-			      		<div class="proposal2">Proposal 2</div>
-			      	</div>
-			      	<div class="col-md-4">
-			      		<div class="proposal3">Proposal 3</div>
-			      	</div>
-			      	<div class="col-md-4">
-			      		<div class="proposal4">Proposal 4</div>
-			      	</div>
-			      	<div class="col-md-4">
-			      		<div class="proposal5">Proposal 5</div>
-			      	</div>
-			      	<div class="col-md-4">
-			      		<div class="proposal6">Proposal 6</div>
-			      	</div>
-			      	<div class="col-md-4">
-			      		<div class="proposal7">Proposal 7</div>
-			      	</div>
-			      </div>
-			    </div>
-			  </div>
+			  
 			</div>
         </div>
       </div>
@@ -308,16 +462,16 @@
 	        Please submit the following information and we will get in touch with you as soon as possible.<br>
 	        <form>
 	          <div class="form-group">
-			    <label for="exampleInputName">Full Name</label>
-			    <input type="text" class="form-control" id="exampleInputName" placeholder="Full Name">
+			    <label for="inputName">Full Name</label>
+			    <input type="text" class="form-control" id="inputName" placeholder="Full Name" required>
 			  </div>
 			  <div class="form-group">
-			    <label for="exampleInputEmail1">Email address</label>
-			    <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
+			    <label for="inputEmail">Email address</label>
+			    <input type="email" class="form-control" id="inputEmail" placeholder="Email" required>
 			  </div>
 			  <div class="form-group">
-			    <label for="exampleInputTelephone">Telephone</label>
-			    <input type="tel" class="form-control" id="exampleInputTelephone" placeholder="Password">
+			    <label for="inputTelephone">Telephone</label>
+			    <input type="tel" class="form-control" id="inputTelephone" placeholder="Password" required>
 			  </div>
 			  <div class="checkbox">
 			    <label>
@@ -354,7 +508,7 @@
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="js/bootstrap.min.js"></script>
     <script src="js/html2canvas.js"></script>
-    <script src="js/mosiko.js"></script>
+    <script src="js/mosiko.js?version=17"></script>
       <script>
   $( function() {
     $( "#draggable" ).draggable({ axis: "y" });
@@ -364,6 +518,18 @@
     $( ".draggableMS" ).draggable({ containment: ".area", grid: [ 50, 50 ] });
   } );
   </script>
+
+  <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-97533558-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
   <div id="selectedCanvas"></div>
   </body>
 </html>
