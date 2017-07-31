@@ -164,6 +164,27 @@ function closeNav() {
     document.getElementById("myNav").style.width = "0%";
 }
 
+$( "#headingFour" ).click(function() {
+  $( "#finalize" ).empty();
+  $( ".draggable.draggableMS" ).each(function( index, element ) {
+    var mosID = this.id;
+    var mosName = $('#'+this.id+' p').text();
+    $( "#finalize" ).append("<div class='col-md-4 fin' id='fin"+mosID+"'>"+mosName+": <select id='sel"+mosID+"' ><option value='A'>A</option><option value='B'>B</option><option value='C'>C</option><option value='D'>D</option><option value='E'>E</option><option value='F'>F</option></select></div>");
+  });
+});
+
+$( "#test" ).click(function() {
+  var summary = "";
+  $( ".draggable.draggableMS" ).each(function( index, element ) {
+      var mosID = this.id;
+      var mosName = $('#'+this.id+' p').text();
+      var colorID = $('#'+this.id+' span').text();
+      var fin = $('#sel'+this.id).val();
+      summary = summary.concat(mosName+"|"+colorID+"|"+fin+";");
+    });
+  alert(summary);
+});
+
 $( "#sub" ).click(function() {
   var summary = "";
   $( ".draggable.draggableMS" ).each(function( index, element ) {
@@ -176,6 +197,7 @@ $( "#sub" ).click(function() {
       onrendered: function(canvas) {
       	$( "#selectedCanvas" ).html(canvas);
       	var dataURL = canvas.toDataURL();
+        var repName = $('#inputRepresentative').val();
       	var name = $('#inputName').val();
         var email = $('#inputEmail').val();
         var telephone = $('#inputTelephone').val();

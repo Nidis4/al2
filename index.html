@@ -424,6 +424,34 @@
 			    </div>
 			  </div>
 			  <div class="panel panel-default">
+			    <div class="panel-heading" role="tab" id="headingFour">
+			      <h4 class="panel-title">
+			        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+			          Finalize Your System
+			        </a>
+			      </h4>
+			    </div>
+			    <div id="collapseFour" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFour">
+			      <div class="panel-body">
+				      <div class="row">
+					      <div class="col-md-12" style="margin-bottom: 30px;">
+For each element added on the rigth specify:<br>
+- A (for drawers),<br>
+- B (for doors opening to the left) or C (for doors opening to the right),<br>
+- D (for doors), 4D (for four doors)<br>
+E (for doors opening upwards) or F (for doors opening downwards)
+					      </div>     
+				      </div>
+				      <div class="row" id='finalize'>
+
+				      </div>
+			      	<button type="button" class="btn btn-primary btn-lg"  id="test">
+					  Submit
+					</button>
+			      </div>
+			    </div>
+			  </div>
+			  <div class="panel panel-default">
 			    <div class="panel-heading" role="tab" id="headingThree">
 			      <h4 class="panel-title">
 			        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
@@ -433,11 +461,11 @@
 			    </div>
 			    <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
 			      <div class="panel-body">
-			      <div class="row">
-				      <div class="col-md-12" style="margin-bottom: 30px;">
-				      	Please submit your design by clicking the button below and our representative will get in touch with you as soon as possible.	
+				      <div class="row">
+					      <div class="col-md-12" style="margin-bottom: 30px;">
+					      	Please submit your design by clicking the button below and our representative will get in touch with you as soon as possible.	
+					      </div>
 				      </div>
-			      </div>
 			      	<button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
 					  Submit
 					</button>
@@ -461,9 +489,13 @@
 	      <div class="modal-body">
 	        Please submit the following information and we will get in touch with you as soon as possible.<br>
 	        <form>
+	        <div class="form-group">
+			    <label for="inputRepresentative">Name of Representative</label>
+			    <input type="text" class="form-control" id="inputRepresentative" placeholder="Representative Name" required>
+			  </div>
 	          <div class="form-group">
-			    <label for="inputName">Full Name</label>
-			    <input type="text" class="form-control" id="inputName" placeholder="Full Name" required>
+			    <label for="inputName">Customer Name</label>
+			    <input type="text" class="form-control" id="inputName" placeholder="Customer Name" required>
 			  </div>
 			  <div class="form-group">
 			    <label for="inputEmail">Email address</label>
@@ -489,7 +521,7 @@
 	</div>
 
 	<!-- Modal  Form-->
-	<div class="modal fade" id="modalImage" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+	<!-- <div class="modal fade" id="modalImage" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
 	  <div class="modal-dialog" role="document">
 	    <div class="modal-content">
 	      <div class="modal-header">
@@ -500,7 +532,7 @@
 	      </div>
 	    </div>
 	  </div>
-	</div>
+	</div>-->
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
