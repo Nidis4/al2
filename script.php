@@ -12,12 +12,14 @@
     $name = $_POST['nameF'];
     $email = $_POST['email'];
     $mobile = $_POST['mobile'];
+    $details = $_POST['details'];
     //$firstname = $_POST['inputfirstname'];
-
+    $host = "http://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]";
+    $host = str_replace("script.php","", $host);
     $topic = "Mos-i-ko System Project";
        
-    $mess = "Name: $name \nE-mail = $email \nTelephone = $mobile \nImage name =  $file \nImage Location=http://digiverse.gr/a2test/".$file." " ;
-    $to = "gkonstantinidis@digiverse.gr";
+    $mess = "New Form has been submitted with the following details\n\n Name : $name \n E-mail : $email \n Telephone : $mobile \n Image name :  $file \n Image Location :  $host".$file." \n\n More Details for elements \n $details \n " ;
+    $to = "gkonstantinidis@digiverse.gr, export@al2.gr, alexia@al2.gr";
     //$subject = $topic;
     //$message = "Job has successfully been terminated\n\nPlease find your results attached.";
     //$headers = "";

@@ -57,15 +57,13 @@ $( ".addCL" ).click(function() {
         $( this ).hasClass("ms026") || $( this ).hasClass("ms051") || $( this ).hasClass("ms052") || $( this ).hasClass("ms053") || $( this ).hasClass("ms054") || 
         $( this ).hasClass("ms055")  ){
 
-        if (color==0){
+        
           $( this ).css( "background", "transparent url('images/xromatologio/"+clicked+".jpg') no-repeat scroll 0% 0% / cover" );
-          $( this ).css( "border" , "7px solid transparent");
-          $( this ).css( "border-image" , "url(images/xromatologio/"+clicked+".jpg) 30 round");
+          // $( this ).css( "border" , "7px solid transparent");
+          // $( this ).css( "border-image" , "url(images/xromatologio/"+clicked+".jpg) 30 round");
+          $( this ).find('span').remove();
           $( this ).append("<span>"+clicked+"</span>");
-        }
-        else{
-          issueColor = 1;
-        }
+
       }
       //IF BASES
       else if( $( this ).hasClass("ms028") || $( this ).hasClass("ms029") || $( this ).hasClass("ms030") || $( this ).hasClass("ms031") || 
@@ -76,10 +74,12 @@ $( ".addCL" ).click(function() {
 
           if ($( this ).hasClass("ms037") || $( this ).hasClass("ms038")){
             $( this ).css( "background-image", "url('images/base75.png'), url('images/xromatologio/"+clicked+".jpg')" );
+			$( this ).find('span').remove();
             $( this ).append("<span>"+clicked+"</span>");
           }
           else{
             $( this ).css( "background-image", "url('images/base25.png'), url('images/xromatologio/"+clicked+".jpg')" );
+            $( this ).find('span').remove();
             $( this ).append("<span>"+clicked+"</span>");
           }
         }
@@ -89,15 +89,25 @@ $( ".addCL" ).click(function() {
       }
       // IF CLOSED BOXES
       else{
-        $( this ).css( "background-image", "url('images/background_nobord.png'), url('images/xromatologio/"+clicked+".jpg')" );
-        $( this ).append("<span>"+clicked+"</span>");
+
+        if (color==1){
+          $( this ).css( "background-image", "url('images/background_nobord.png'), url('images/xromatologio/"+clicked+".jpg')" );
+          $( this ).find('span').remove();
+          $( this ).append("<span>"+clicked+"</span>");
+        }
+        else{
+          issueColor = 1;
+        }
+
+
+        
       }
     });
 
 
 
 	    if (issueColor == 1){
-	      alert('Color cannot be applied to Open Elements');
+	      alert('Wood cannot be applied to Closed Elements');
 	    }
       else if (issueVeneer == 1){
         alert('Veneer cannot be applied to Bases');
@@ -159,7 +169,7 @@ $( "#sub" ).click(function() {
   $( ".draggable.draggableMS" ).each(function( index, element ) {
     var mosID = $('#'+this.id+' p').text();
     var colorID = $('#'+this.id+' span').text();
-    summary .= mosID+":"+colorID+"<br>";
+    summary = summary.concat(mosID+":"+colorID+" \n ");
   });
   //return true;
     html2canvas($( ".area" ), {
@@ -191,7 +201,7 @@ $( "#sub" ).click(function() {
           // and than put the image in your browser.
         });
         $("#myModal").removeClass("in");
-
+        $(".modal-backdrop.fade").removeClass("in");
 
         //var image = canvas.toDataURL("image/png").replace("image/png", "image/octet-stream");  // here is the most important part because if you dont replace you will get a DOM 18 exception.
         //window.location.href=image; // 
